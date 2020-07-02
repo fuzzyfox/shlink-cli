@@ -51,7 +51,7 @@ class ShortUrlParse extends Command
         $shortCode = $this->argument('shortCode');
 
         if (str_contains($shortCode, '/')) {
-            $url = parse_url($shortCode));
+            $url = parse_url($shortCode);
             $params['domain'] = $url['host'];
             $shortCode = substr($url['path'], 1);
         }
