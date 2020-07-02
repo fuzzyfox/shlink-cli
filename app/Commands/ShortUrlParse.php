@@ -51,9 +51,9 @@ class ShortUrlParse extends Command
         $shortCode = $this->argument('shortCode');
 
         if (str_contains($shortCode, '/')) {
-            $parts = explode('/', preg_replace('/https?:\/\//', '', $shortCode));
-            $params['domain'] = $parts[0];
-            $shortCode = array_pop($parts);
+            $url = parse_url($shortCode));
+            $params['domain'] = $url['host'];
+            $shortCode = substr($url['path'], 1);
         }
 
         // Make request to api
