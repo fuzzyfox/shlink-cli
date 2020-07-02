@@ -1,23 +1,28 @@
 {
-    "name": "laravel-zero/laravel-zero",
-    "description": "The Laravel Zero Framework.",
-    "keywords": ["framework", "laravel", "laravel zero", "console", "cli"],
-    "homepage": "https://laravel-zero.com",
+    "version": "0.1.0-dev",
+    "name": "fuzzyfox/shlink-cli",
+    "description": "An unofficial shlink cli rest client.",
+    "keywords": ["shlink", "rest", "client", "shorturl", "console", "cli"],
+    "homepage": "https://github.com/fuzzyfox/shlink-cli",
     "type": "project",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/laravel-zero/laravel-zero/issues",
-        "source": "https://github.com/laravel-zero/laravel-zero"
+        "issues": "https://github.com/fuzzyfox/shlink-cli/issues",
+        "source": "https://github.com/fuzzyfox/shlink-cli"
     },
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "William Duyck",
+            "email": "fuzzyfox0@gmail.com"
         }
     ],
     "require": {
         "php": "^7.2.5",
-        "laravel-zero/framework": "^7.0"
+        "guzzlehttp/guzzle": "^6.3.1",
+        "illuminate/http": "^7.0",
+        "laminas/laminas-text": "^2.7",
+        "laravel-zero/framework": "^7.0",
+        "ext-json": "*"
     },
     "require-dev": {
         "mockery/mockery": "^1.3.1",
@@ -45,5 +50,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["application"]
+    "bin": ["shlink-cli"]
 }
