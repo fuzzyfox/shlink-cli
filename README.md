@@ -5,8 +5,6 @@ a Shlink server via its API, and the command line.
 
 ## Usage
 
-From clipboard on macOS
-
 ```sh
 $ pbpaste | shlink-cli short-url:generate | pbcopy
 
