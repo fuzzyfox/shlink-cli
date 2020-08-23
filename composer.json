@@ -1,8 +1,15 @@
 {
-    "version": "0.1.0-dev",
+    "version": "v0.1.1",
     "name": "fuzzyfox/shlink-cli",
     "description": "An unofficial shlink cli rest client.",
-    "keywords": ["shlink", "rest", "client", "shorturl", "console", "cli"],
+    "keywords": [
+        "shlink",
+        "rest",
+        "client",
+        "shorturl",
+        "console",
+        "cli"
+    ],
     "homepage": "https://github.com/fuzzyfox/shlink-cli",
     "type": "project",
     "license": "MIT",
@@ -50,5 +57,7 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": ["shlink-cli"]
+    "bin": [
+        "shlink-cli"
+    ]
 }
