@@ -1,6 +1,6 @@
 <?php
 
-$shlinkrcPath = env('HOME') . '/.shlinkrc';
+$shlinkrcPath = env('HOME') . DIRECTORY_SEPARATOR . '.shlinkrc';
 
 if (!file_exists($shlinkrcPath)) {
     return [];
